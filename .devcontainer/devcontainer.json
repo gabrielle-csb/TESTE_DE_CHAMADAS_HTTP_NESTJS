@@ -1,0 +1,34 @@
+t{
+	"name": "Existing Docker Compose (Extend)",
+	"dockerComposeFile": [
+		"../docker-compose.yml",
+		"docker-compose.yml"
+	],
+	"extensions": [
+		"dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "editorconfig.editorconfig",
+    "donjayamanne.githistory",
+    "eamodio.gitlens",
+    "rbbit.typescript-hero",
+    "gruntfuggly.todo-tree",
+    "shd101wyy.markdown-preview-enhanced",
+    "orta.vscode-jest"
+	],
+	"service": "app",
+	"workspaceFolder": "/app",
+	"forwardPorts": [
+		3000,
+		9229,
+		7001
+	],
+	"settings": {
+		"terminal.integrated.profiles.linux": {
+			"zsh": {
+				"path": "zsh"
+			}
+		},
+		"terminal.integrated.defaultProfile.linux": "zsh"
+	}
+	// "postCreateCommand": "yarn && yarn migration-dev:run && yarn start:dev"
+}
